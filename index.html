@@ -670,7 +670,9 @@ img.logo{width:auto;display:block}
 /* ---- 3호 v10(ORDER-51): 가을 그림 = 제호 뒤 배경(기사 위 띠 폐지) · 이슈 추적 박스 「잡았다 요놈!!」 흐린 배경 슬롯 ---- */
 .headband{display:none}
 .flag.flag-bg{position:relative;isolation:isolate;padding:10px 20px 6px}
-.flag.flag-bg .flagbg{position:absolute;inset:-46px -80px -8px;background-size:contain;background-position:center bottom;background-repeat:no-repeat;opacity:.72;z-index:0;pointer-events:none}
+.flag.flag-bg .flagbg{position:absolute;inset:-46px -50px -8px -177px;width:auto;height:auto;max-width:none;background-size:contain;background-position:left bottom;background-repeat:no-repeat;opacity:.72;z-index:0;pointer-events:none}
+/* 사용자 11-04 03:00: 배경을 좌우로 조금 넓히고 펭귄은 귀(「3일쯤 빠른 뉴스!!」) 바로 오른쪽까지 — 1900px 실측: 귀 오른끝 485 → 펭귄 왼끝 ≈503, 그림 오른끝 ≈ 제호+50px */
+@media (max-width:1400px){.flag.flag-bg .flagbg{left:-110px;right:-30px}}
 .flag.flag-bg>h1,.flag.flag-bg>.flag-ko{position:relative;z-index:1}
 .flag.flag-bg>h1{text-shadow:0 0 10px var(--paper),0 0 20px var(--paper),0 0 2px var(--paper)}
 .track.has-bg{position:relative;overflow:hidden}
