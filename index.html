@@ -747,15 +747,15 @@ img.logo{width:auto;display:block}
 .pollbox .pnote{font:400 11px/1.5 var(--f-sans);color:var(--ink-3);margin:6px 0 0;word-break:keep-all}
 .pollbox .pnote b{color:var(--ink-2)}
 .svgnp{width:100%;height:auto;display:block}
-.svgnp text{font-family:var(--f-sans);fill:var(--ink-2)}
+.svgnp text{font-family:var(--f-sans);fill:var(--ink-2);stroke:none!important;font-weight:400}  /* ORDER-56: 색 클래스 stroke가 글자 외곽선으로 번지던 것 차단 */
 .svgnp .grid{stroke:var(--hairline);stroke-width:1}.svgnp .ax{stroke:var(--rule-ad);stroke-width:1}.svgnp .mt{stroke:var(--rule-ad);stroke-width:1}
 .svgnp .ln{fill:none;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}.svgnp .ln.dash{stroke-dasharray:6 4}
 .svgnp .ld{stroke:var(--rule-ad);stroke-width:.8}
 .svgnp .c-pos{stroke:#4575b4;fill:#4575b4}.svgnp .c-neg{stroke:#d73027;fill:#d73027}.svgnp .c-dem{stroke:#2f6fb3;fill:#2f6fb3}.svgnp .c-ppp{stroke:#c8302c;fill:#c8302c}.svgnp .c-reb{stroke:#2a9d5c;fill:#2a9d5c}
 .svgnp .p0{stroke:#1f5fa8;fill:#1f5fa8}.svgnp .p1{stroke:#d7301f;fill:#d7301f}.svgnp .p2{stroke:#2a9d5c;fill:#2a9d5c}.svgnp .p3{stroke:#d99000;fill:#d99000}.svgnp .p4{stroke:#7b4fb5;fill:#7b4fb5}.svgnp .p5{stroke:#8c5a2b;fill:#8c5a2b}.svgnp .p6{stroke:#c2399a;fill:#c2399a}
 .svgnp .c-ink{stroke:var(--ink);fill:var(--ink)}.svgnp .c-mute{fill:var(--rule-ad)}
-.svgnp .pin{stroke:var(--ink-3);stroke-dasharray:3 3}.svgnp .pint{fill:var(--ink-3);font-weight:600}
-.svgnp .lbl{font-size:10.5px}.svgnp .val{font-size:11px;font-weight:700}.svgnp .endl{font-size:11px;font-weight:700}.svgnp .leg{font-size:10.5px;fill:var(--ink-3)}
+.svgnp .pin{stroke:var(--ink-3);stroke-dasharray:3 3}.svgnp .pint{fill:var(--ink-3);font-weight:500}
+.svgnp .lbl{font-size:10.5px}.svgnp .val{font-size:11px;font-weight:600}.svgnp .endl{font-size:11px;font-weight:600;letter-spacing:.01em}.svgnp .leg{font-size:10.5px;fill:var(--ink-3)}
 .svgnp .mlbl{font-size:10.5px;fill:var(--ink-3)}
 .camp2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
 .camp2 .col{border:1px solid var(--hairline);padding:8px 10px}
